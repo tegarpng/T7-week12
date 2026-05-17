@@ -40,7 +40,6 @@ def filter_by_product(df, product):
 
 def get_monthly_summary(df):
     summary = df.groupby("bulan")["Sales"].sum().reset_index()
-    # Pastikan semua bulan 1-12 ada meskipun tidak ada data
     all_months = pd.DataFrame({"bulan": range(1, 4)})
     summary = all_months.merge(summary, on="bulan", how="left").fillna(0)
     return summary
