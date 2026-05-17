@@ -1,3 +1,7 @@
+#Muhammad Tegar Bijanta
+#F1D02410081
+#KELAS D
+
 from pathlib import Path
 import sys
 
